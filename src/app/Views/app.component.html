@@ -1,0 +1,11 @@
+<main class="container-fluid h-100">
+    <app-header></app-header>
+  <app-signin [getParentValue]="takeParentValue"></app-signin>
+  <div class="container">
+<!--    here passed data to child-->
+    <app-recipe [abcd]="externalRecipes"></app-recipe>
+    <app-shopping></app-shopping>
+  </div>
+  </main>
+
+<router-outlet></router-outlet>
