@@ -1,8 +1,7 @@
 <div class="row">
   <div class="col-md-5">
-    <app-recipe-list [perfectchild]="externalRecipes" (onstatusCreated)="onBookAdded($event)"></app-recipe-list>
+    <app-recipe-list></app-recipe-list>
     <hr>
-    <div *ngFor="let book of favBooks">{{book.title}}</div>
   </div>
   <div class="col-md-7">
     <app-recipe-detail></app-recipe-detail>
