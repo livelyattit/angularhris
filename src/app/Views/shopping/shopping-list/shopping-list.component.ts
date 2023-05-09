@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {Ingredient} from "../../../Models/Ingredient.model";
 
 @Component({
@@ -8,10 +8,16 @@ import {Ingredient} from "../../../Models/Ingredient.model";
 })
 export class ShoppingListComponent {
 
+
   ingredients: Ingredient[] = [
     new Ingredient('Apple', 5),
     new Ingredient('Tomato', 20)
   ];
 
   protected readonly Ingredient = Ingredient;
+
+  addNewIngredient(newIngredient: Ingredient) {
+
+    this.ingredients.push(newIngredient);
+  }
 }

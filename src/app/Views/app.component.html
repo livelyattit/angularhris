@@ -1,10 +1,12 @@
 <main class="container-fluid h-100">
-    <app-header></app-header>
+    <app-header (featureSelected)="onNavigate($event)"></app-header>
   <app-signin></app-signin>
   <div class="container">
 <!--    here passed data to child-->
-    <app-recipe></app-recipe>
-    <app-shopping></app-shopping>
+    <app-recipe *ngIf="loadedFeature == 'recipe' else shoppinglist"></app-recipe>
+    <ng-template #shoppinglist>
+      <app-shopping></app-shopping>
+    </ng-template>
   </div>
   </main>
 

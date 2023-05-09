@@ -3,15 +3,15 @@
     <form class="form row">
       <div class="form-group col-xs-6 mb-3">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" class="form-control">
+        <input #nameInput type="text" name="name" id="name" class="form-control">
       </div>
       <div class="form-group col-xs-6 mb-3">
         <label for="amount">Amount</label>
-        <input type="number" name="amount" id="amount" class="form-control">
+        <input #amountInput type="number" name="amount" id="amount" class="form-control">
       </div>
       <div class="form-group col-xs-12 mb-3">
         <div class="d-flex">
-          <button type="submit" class="btn btn-success me-3 btn-lg" style="min-width: 120px;">Add</button>
+          <button (click)="addIngredient()" type="submit" class="btn btn-success me-3 btn-lg" style="min-width: 120px;">Add</button>
           <button type="submit" class="btn btn-danger me-3 btn-lg" style="min-width: 120px;">Delete</button>
           <button type="submit" class="btn btn-info btn-lg" style="min-width: 120px;">Clear</button>
         </div>
