@@ -15,6 +15,8 @@ import { RecipeDetailComponent } from './recipe/recipe-list/recipe-detail/recipe
 import { SigninComponent } from './signin/signin.component';
 import {NgOptimizedImage} from "@angular/common";
 import {FormsModule} from "@angular/forms";
+import { FeatureColorDirective } from './feature-color.directive';
+import { BetterFeatureColorDirective } from './better-feature-color.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import {FormsModule} from "@angular/forms";
     RecipeComponent,
     RecipeListComponent,
     RecipeItemComponent,
-    RecipeDetailComponent
+    RecipeDetailComponent,
+    FeatureColorDirective,
+    BetterFeatureColorDirective
   ],
   imports: [
     BrowserModule,

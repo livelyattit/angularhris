@@ -3,10 +3,8 @@
   <app-signin></app-signin>
   <div class="container">
 <!--    here passed data to child-->
-    <app-recipe *ngIf="loadedFeature == 'recipe' else shoppinglist"></app-recipe>
-    <ng-template #shoppinglist>
-      <app-shopping></app-shopping>
-    </ng-template>
+    <app-recipe [hidden]="loadedFeature == 'shopping-list'"></app-recipe>
+    <app-shopping [hidden]="loadedFeature == 'recipe'"></app-shopping>
   </div>
   </main>
 
