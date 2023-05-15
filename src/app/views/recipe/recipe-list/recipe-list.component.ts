@@ -1,5 +1,5 @@
 import {AfterContentChecked, AfterViewChecked, Component, EventEmitter, Input, Output} from '@angular/core';
-import {Recipe} from "../../../Models/Recipe.model";
+import {Recipe} from "../../shared/Recipe.model";
 
 @Component({
   selector: 'app-recipe-list',

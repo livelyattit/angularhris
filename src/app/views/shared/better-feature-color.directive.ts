@@ -19,12 +19,18 @@ export class BetterFeatureColorDirective implements OnInit{
 
   @HostListener('mouseenter') mouseover(event: Event){
     // this.renderer.setStyle(this.element.nativeElement, 'background-color', 'transparent')
-    this.backgroundColor = 'green';
+    this.backgroundColor = 'blue';
   }
 
   @HostListener('mouseleave') mouseleave(event: Event){
     // this.renderer.setStyle(this.element.nativeElement, 'background-color', 'green')
     this.backgroundColor= this.defaultColor
+  }
+
+
+  @HostListener('click') click(event: Event){
+    // this.renderer.setStyle(this.element.nativeElement, 'background-color', 'transparent')
+    window.alert('hello');
   }
 
 }
