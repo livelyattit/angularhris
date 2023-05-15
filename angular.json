@@ -30,12 +30,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/style.css",
-              "src/styles.scss"
+              "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
-              "src/assets/js/popper.min.js",
-              "src/assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {

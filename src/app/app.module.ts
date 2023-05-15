@@ -17,6 +17,7 @@ import {NgOptimizedImage} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import { FeatureColorDirective } from './views/shared/feature-color.directive';
 import { BetterFeatureColorDirective } from './views/shared/better-feature-color.directive';
+import { DropdownDirective } from './views/shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BetterFeatureColorDirective } from './views/shared/better-feature-color
     RecipeItemComponent,
     RecipeDetailComponent,
     FeatureColorDirective,
-    BetterFeatureColorDirective
+    BetterFeatureColorDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
