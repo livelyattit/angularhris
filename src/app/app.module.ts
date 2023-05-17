@@ -18,6 +18,8 @@ import {FormsModule} from "@angular/forms";
 import { FeatureColorDirective } from './views/shared/feature-color.directive';
 import { BetterFeatureColorDirective } from './views/shared/better-feature-color.directive';
 import { DropdownDirective } from './views/shared/dropdown.directive';
+import {NewAccountComponent} from "./views/new-account/new-account.component";
+import {AccountComponent} from "./views/account/account.component";
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { DropdownDirective } from './views/shared/dropdown.directive';
     RecipeDetailComponent,
     FeatureColorDirective,
     BetterFeatureColorDirective,
-    DropdownDirective
+    DropdownDirective,
+    NewAccountComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,

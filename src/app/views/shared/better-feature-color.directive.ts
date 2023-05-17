@@ -30,7 +30,7 @@ export class BetterFeatureColorDirective implements OnInit{
 
   @HostListener('click') click(event: Event){
     // this.renderer.setStyle(this.element.nativeElement, 'background-color', 'transparent')
-    window.alert('hello');
+    // window.alert('hello');
   }
 
 }

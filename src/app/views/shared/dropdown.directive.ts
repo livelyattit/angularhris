@@ -9,6 +9,7 @@ export class DropdownDirective {
   constructor(private elementRef: ElementRef) { }
 
   @HostListener('click') toggleDropdown(){
+    // toggling dropdown
     this.isOpen = !this.isOpen;
   }
 
